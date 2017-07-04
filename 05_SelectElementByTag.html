@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>18_StringFunctions</title>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>      
+    </head>
+    <body>
+       <div class="test">Hello</div>
+       <div class="test">Hello World</div>
+       <p class="test">Hello Sasha</p>
+       <p class="test">Hello Java</p>
+       
+       <img src="1.jpg" alt="1">
+       <img src="2.jpg" alt="2" title="2">
+       
+        <script type="text/javascript">
+            var test = $('div');
+            alert(test.length);
+            
+            var img = $('img[title]');  // выбрали все тэги img, у которых есть атрибут title
+            alert(img.length);
+        </script>    
+    </body>
+</html>
