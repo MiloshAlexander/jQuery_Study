@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>18_StringFunctions</title>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>      
+    </head>
+    <body>
+       <div class="test">Hello</div>
+       <div class="test">Hello World</div>
+       <p class="test">Hello Sasha</p>
+       <p class="test">Hello Java</p>
+       
+        <script type="text/javascript">
+            //var test1 = $('.test');  //  взять все классы
+            var test2 = $('div.test');  //  взять все классы в div
+            for(var i = 0; i < test2.length; i++) {
+                //test2[i]  можно так
+                test2.get(i).style.color = "red";
+            }
+            
+            setTimeout("$('p.test').get(0).style.color = 'green'", 2000);
+        </script>    
+    </body>
+</html>
