@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>18_StringFunctions</title>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>    
+        <script type="text/javascript">
+            function valid() {
+                var state = $("input[name='sex']:checked").val();
+                if(!state) {
+                    return $('#message').html("<fotn style='color:red'>Укажите ваш пол</font><br>");
+                }
+                alert(state);
+                if(state == "male") {
+                    $("#img").show();
+                }
+            }
+        </script>    
+    </head>
+    <body>
+         <form name="form" if="form">
+            <label for="female">Женский</label>
+            <input id="female" type="radio" name="sex" value="female">
+            <label for="male">Мужской</label>
+            <input id="male" type="radio" name="sex" value="male">
+            <br><br>
+            <span id="message"></span>
+            <input type="button" id="done" onclick="return valid()" value="Готово">
+         </form>
+           <br><br>
+           <img src="1.jpg" style="display:none" id="img">
+            
+    </body>
+</html>
