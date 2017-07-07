@@ -7,8 +7,9 @@
             function valid() {
                 var state = $("input[name='sex']:checked").val();
                 if(!state) {
-                    return $('#message').html("<fotn style='color:red'>Укажите ваш пол</font><br>");
+                    return $('#message').html("<fotn style='color:red'>Укажите ваш пол</font><br>");                    
                 }
+                $("#message").hide();
                 alert(state);
                 if(state == "male") {
                     $("#img").show();
