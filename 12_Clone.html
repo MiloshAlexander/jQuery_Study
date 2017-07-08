@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>09_ClassesManipulation</title>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="div">
+            Блок
+            <p>Абзац</p>
+        </div>
+           
+        <script type="text/javascript">
+            var block = $("#div").clone();
+            
+            block.html("<p>Новый абзац</p>");
+            
+            $("body").append(block);
+            
+        </script>
+            
+    </body>
+</html>
