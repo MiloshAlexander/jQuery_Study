@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>09_ClassesManipulation</title>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    </head>
+    <body>
+         <div id="div">Блок</div>
+           
+        <script type="text/javascript">
+            $("#div").css("font-size", "25px");
+            $("#div").css("color", "white");
+            
+            $("#div").css("background-color", function() {
+                return "blue";
+            });
+            
+            $("#div").css("width", "250px");
+            
+            $("#div").css("height", function() {
+                return $(this).width();
+            });
+            
+        </script>
+            
+    </body>
+</html>
