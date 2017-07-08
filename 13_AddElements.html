@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>09_ClassesManipulation</title>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="div">
+            Блок
+            <p>Абзац</p>
+        </div>
+          <div id="div_2">Второй див</div>
+          <img src="1.jpg" alt="">
+          <img src="2.jpg" alt="">
+          <img src="3.jpg" alt=""><br>
+          
+          <a href="#">Ссылка 1</a>
+          <a href="#">Ссылка 2</a>
+           
+        <script type="text/javascript">
+            $("div").append("<span>Простой текст</span>");
+            $("img").appendTo($("#div_2"));
+            
+            $("a").wrap("<p></p>");
+            
+        </script>
+            
+    </body>
+</html>
