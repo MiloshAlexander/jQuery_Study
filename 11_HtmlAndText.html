@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>09_ClassesManipulation</title>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="div">
+            Блок
+            <p>Абзац</p>
+        </div>
+           
+        <script type="text/javascript">
+            alert($("#div").html());
+            alert($("#div").text());
+            
+            $("p").html("<p>Новый абзац</p>");
+            
+        </script>
+            
+    </body>
+</html>
