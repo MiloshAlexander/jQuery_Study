@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>09_ClassesManipulation</title>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>               
+        <style>
+            .div_1 {
+                background-color: aqua;
+            }
+            .div_2 {
+                background-color: bisque;
+            }
+        </style>
+    </head>
+    <body>
+         <div id="div">Text</div>
+           
+        <script type="text/javascript">
+            var div = prompt("1-й или 2-й?");
+            while(div != 1 && div != 2) {
+                div = prompt("1-й или 2-й?");
+            }
+            $("#div").attr("class", "div_" + div);
+            alert($("#div").get(0).className);
+        </script>
+            
+    </body>
+</html>
