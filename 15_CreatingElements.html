@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>09_ClassesManipulation</title>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    </head>
+    <body>
+        <div>Блок</div>
+           
+        <script type="text/javascript">
+            $("<p>Текст в конце блока</p>").appendTo("div");
+            $("<p>Текст до начала блока</p>").prependTo("div");
+            $("<p>Вставка до тэга</p>").insertBefore("div");
+            $("<p>Вставка после тэга</p>").insertAfter("div");
+            
+        </script>
+            
+    </body>
+</html>
