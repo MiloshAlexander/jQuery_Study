@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>17_EventHandler</title>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        
+        <script type="text/javascript">
+            function incSize(event) {
+                var width = Number(event.target.style.width.substring(0, event.target.style.width.length - 2));
+                event.target.style.width = (width + 25) + "px";
+                //$(event.target).unbind();  функция, чтобы отменить bind
+                $("<p>Координаты мышки при нажатии: x - " + event.screenX + ", y - " + event.screenY + "</p>").insertAfter("div:last");
+            }
+            
+             $(document).ready(function() {
+                 $("div").bind("click", incSize);
+                 $(document).on("click", "p", function() {
+                     alert("test");
+                 });  // работает с теми тэгами, которые были созданы после загрузки страницы
+             });   
+                 
+        </script>
+        
+    </head>
+    <body>
+        <div style="height: 50px; width: 50px; background-color: red"></div>
+        <div style="height: 50px; width: 50px; background-color: blue"></div>
+        <div style="height: 50px; width: 50px; background-color: green"></div>
+        
+            
+    </body>
+</html>
